@@ -1,0 +1,368 @@
+<!DOCTYPE html><html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Application Center">
+    <meta name="keywords" content="Kenon's Application Center.">
+    <title>Kenon - Apply</title>
+    <meta property="og:image" content="images/Kenon1-modified.png">
+<meta name="theme-color" content="#daa972">
+<meta name="msapplication-TileColor" content="#daa972">
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/scale.css">
+    <link rel="stylesheet" href="css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="icon" type="image/x-icon" href="images/Kenon1-modified.png">
+
+    <script src="js/jquery-3.6.0.js"></script>
+  </head>
+  <body>
+    <!-- Back To Top Start -->
+    <a id="backtotop" data-tippy-content="Back To Top.">
+      <i class="fa-solid fa-angle-up has-text-white fa-2xl mt-5"></i>
+    </a>
+    <!-- Back To Top End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand mt-2 mb-2">
+        <a class="navbar-item" href="/">
+          <strong>Kenon</strong>
+
+          <!-- or if you want to use image -->
+          <!-- <img
+            src="image link or path"
+            width="112"
+            height="28"
+          /> -->
+        </a>
+
+        <a role="button" class="navbar-burger has-text-white" data-target="navMenu" aria-label="menu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          
+        </div>
+
+        <div class="navbar-end">
+          <a href="https://discord.gg/NkKyNbKNFq" class="navbar-item is-tab" target="_blank">
+            <i class="fa-brands fa-discord"></i>
+          </a>
+          <a href="https://linktr.ee/kenonbot" class="navbar-item is-tab">
+            Vote
+          </a>
+          <a href="https://discord.com/api/oauth2/authorize?client_id=1103729008077721600&amp;permissions=414464731201&amp;scope=bot" class="navbar-item is-tab">
+            Invite
+          </a>
+
+          <div class="navbar-item">
+            <div class="buttons">
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <br><br><br><br>
+
+    <section class="section">
+        <div class="container">
+          <div class="columns is-centered">
+            <div class="column is-half">
+              <h2 class="title has-text-centered">Application Center</h2>
+              <div class="red-box">
+                <p>
+                  <i class="fas fa-info-circle exclamation"></i>
+                  <span class="red-box-desc" contenteditable="false">Before you start applying, please make sure to join our Discord Server. We'll contact you there. Also, it's strongly recommended that you know Kenon good enough! Please only apply if you have Experience with the Rank. Missusing this Application Form will lead into a blacklist for further Applications! We wish every applicant the best of luck.<br><strong>You do not get payed.</strong></span>
+                </p>
+              </div>
+              <br>
+      
+              <form action="successa" id="question-form" method="post" name="application" class="was-validated"><input type="hidden" name="form-name" value="application">
+                <div class="field">
+                  <label class="label">Email</label>
+                  <div class="control">
+                    <input class="input is-dark is-outlined" type="email" name="email" placeholder="Your email" required="">
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label">Discord Username</label>
+                  <div class="control">
+                    <input class="input is-dark is-outlined" type="text" name="UserName" placeholder="e.g. Kenon#1205" required="">
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label">Discord UserID</label>
+                  <div class="control">
+                    <input class="input is-dark is-outlined" type="text" name="UserId" placeholder="1103729008077721600" required="">
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label">For which position would you like to apply?</label>
+                  <div class="control">
+                    <div class="select is-fullwidth is-dark is-outlined">
+                      <select name="category" id="categorySelect">
+                        <option value="" disabled="" selected="">Choose a Job</option>
+                        <option value="anime" disabled="">Community Manager (CLOSED)</option>
+                        <option value="coaster">Moderator</option>
+                        <option value="game" disabled="">Developer (CLOSED)</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div id="coasterFields" style="display: none;">
+                  <div class="field">
+                    <label class="label">Which Languages do you speak?</label>
+                    <div class="control">
+                      <input class="input is-dark is-outlined" name="Languages" placeholder="English, German, Polish, France,..." style="color: #c6c6c6;" required="">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label class="label">In which Tiemzone are you living?</label>
+                    <div class="control">
+                      <input class="input is-dark is-outlined" name="timezone" placeholder="UTC; CET; ..." style="color: #c6c6c6;" required="">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label class="label">Tell us a bit about yourself.</label>
+                    <div class="control">
+                      <textarea class="textarea is-dark is-outlined" name="Profile" placeholder="" style="color: #c6c6c6;" required=""></textarea>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label class="label">Please describe your Experience.</label>
+                    <div class="control">
+                      <textarea class="textarea is-dark is-outlined" name="Experiences" placeholder="" style="color: #c6c6c6;" required=""></textarea>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label class="label">Why do you want to become a Staff member for Coding Hub?</label>
+                    <div class="control">
+                      <textarea class="textarea is-dark is-outlined" name="WhyKenon" placeholder="" style="color: #c6c6c6;" required=""></textarea>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label class="label">Why should we pick you?</label>
+                    <div class="control">
+                      <textarea class="textarea is-dark is-outlined" name="StandOut" placeholder="" style="color: #c6c6c6;" required=""></textarea>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label class="label">Briefly describe what Moderator's tasks are.</label>
+                    <div class="control">
+                      <textarea class="textarea is-dark is-outlined" name="Tasks" placeholder="" style="color: #c6c6c6;" required=""></textarea>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label class="label">Is there anything else you want to add to your Application? (OPTIONAL)</label>
+                    <div class="control">
+                      <textarea class="textarea is-dark is-outlined" name="otherthings" placeholder="" style="color: #c6c6c6;"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div id="otherFields" style="display: none;">
+                  <div class="field">
+                    <label class="label">Name</label>
+                    <div class="control">
+                      <input class="input is-dark is-outlined" type="text" name="name" placeholder="Enter the name" style="color: #c6c6c6;" required="">
+                    </div>
+                  </div>
+                </div>
+                <div class="field">
+                  <div><script src="js/api.js"></script>
+<div class="g-recaptcha" data-sitekey="6LdAvUIUAAAAAHjrjmjtNTcXyKm0WKwefLp-dQv9"></div>
+<noscript>
+  <div>
+  <div style="width: 302px; height: 422px; position: relative;">
+  <div style="width: 302px; height: 422px; position: absolute;">
+  <iframe src="https://www.google.com/recaptcha/api/fallback?k=6LdAvUIUAAAAAHjrjmjtNTcXyKm0WKwefLp-dQv9" frameborder="0" scrolling="no"
+    style="width: 302px; height:422px; border-style: none;">
+  </iframe>
+  </div>
+  </div>
+  <div style="width: 300px; height: 60px; border-style: none; bottom: 12px; left: 25px; margin: 0px; padding: 0px; right: 25px; background: #f9f9f9; border: 1px solid #c1c1c1; border-radius: 3px;">
+    <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response"
+      style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;" >
+    </textarea>
+  </div>
+  </div>
+</noscript>
+</div>
+                  <div class="control has-text-centered">
+                    <button class="button is-primary is-outlined" type="submit" style="border-color: #daa972;">
+                      Submit
+                    </button>
+                  </div>
+                </div>
+              </form>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <style>
+        .input.is-dark.is-outlined,
+        .textarea.is-dark.is-outlined,
+        .select.is-dark.is-outlined select {
+          background-color: #212121;
+          color: #fdfdfd;
+          border-color: #fdfdfd;
+        }
+      
+        .input.is-dark.is-outlined::placeholder {
+          color: #a5a5a5;
+        }
+      
+        h2.title.has-text-centered {
+          text-align: center;
+        }
+      
+        h2.title.has-text-centered::after {
+          content: "";
+          display: block;
+          margin: auto;
+          width: 70%;
+          height: 2px;
+          background-color: #daa972;
+          margin-top: 10px;
+        }
+      
+        .red-box {
+          background-color: #55ade0;
+          opacity: 0.9;
+          border: 2px solid #e0e0e0;
+          padding: 10px;
+          margin-top: 20px;
+          border-radius: 15px;
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+      
+        .red-box p {
+          display: flex;
+          align-items: center;
+          color: #fff;
+        }
+      
+        .red-box .exclamation {
+          font-size: 40px;
+          margin-right: 10px;
+          color: #fff;
+        }
+      
+        #question-form .field:not(:first-child) {
+          margin-top: 10px;
+        }
+      
+        #question-form .submit-button {
+          margin-top: 20px;
+        }
+      </style>
+      
+      <script>
+        // Function to handle the category select change event
+        function handleCategoryChange(event) {
+          const selectedOption = event.target.value;
+      
+          if (selectedOption === '') {
+            // Disable the submit button and reset the select value to the initial "Choose a Category" option
+            const submitButton = document.querySelector('button[type="submit"]');
+            submitButton.disabled = true;
+            event.target.value = '';
+          } else {
+            // Enable the submit button
+            const submitButton = document.querySelector('button[type="submit"]');
+            submitButton.disabled = false;
+          }
+      
+          // Show/hide fields based on the selected category
+          const coasterFields = document.getElementById('coasterFields');
+          const otherFields = document.getElementById('otherFields');
+      
+          if (selectedOption === 'coaster') {
+            coasterFields.style.display = 'block';
+            otherFields.style.display = 'none';
+            coasterFields.querySelectorAll('input').forEach((input) => (input.required = true));
+            otherFields.querySelectorAll('input').forEach((input) => (input.required = false));
+          } else {
+            coasterFields.style.display = 'none';
+            otherFields.style.display = 'block';
+            coasterFields.querySelectorAll('input').forEach((input) => (input.required = false));
+            otherFields.querySelectorAll('input').forEach((input) => (input.required = true));
+          }
+        }
+      
+        // Add event listener to the category select element
+        const categorySelect = document.querySelector('select[name="category"]');
+        categorySelect.addEventListener('change', handleCategoryChange);
+      
+        // Validate form on submit
+        const form = document.getElementById('question-form');
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+      
+          form.classList.add('was-validated');
+        });
+      
+        // Check form validity when the page loads
+        window.addEventListener('load', function () {
+          form.classList.add('was-validated');
+        });
+      </script>
+      
+  
+  
+  
+  
+  
+  
+   
+
+    <!-- Footer Section Start -->
+    <footer class="footer bg-base">
+      <div class="content has-text-centered has-text-white">
+        <div class="mb-2">
+          <a href="https://discord.gg/qyAmUsYU35" class="has-text-white" target="_blank">
+            <i class="fa-brands fa-discord"></i>
+          </a>
+          
+
+        </div>
+
+        <p>
+          <span class="has-text-weight-bold">K E N O N</span>
+          <br>
+          © <span id="cp-year"></span> Copyright <a href="https://cgxdev.eu">Cgx Development</a>. All Rights
+          Reserved.
+        </p>
+        
+        
+        
+        <p style="letter-spacing: 0.1em;" class="is-uppercase"> <strong>Legal</strong><br>
+          
+          <a href="https://www.termsfeed.com/live/169eb93b-5f6b-4d7e-a515-c9ce156006c1" class="blurple has-text-weight-bold" target="_blank">TERMS and Conditions</a><br>
+          <a href="https://www.termsfeed.com/live/85bc457e-3530-4986-8062-9b4254886b54" class="blurple has-text-weight-bold" target="_blank">Privacy Police</a>
+        </p>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <script src="js/aos.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="js/script.js"></script>
+  
+
+
+</body></html>
